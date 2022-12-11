@@ -5,4 +5,14 @@ public class Pet  extends Animal{
         super(name, age, weight, species);
     }
 
+
+    @Override
+    public void feed() {
+        System.out.println("I'm a pet, I don't eat");
+    }
+
+    @Override
+    public void feed(double foodWeight) {
+        System.out.println("I'm a pet, I don't eat");
+    }
 }

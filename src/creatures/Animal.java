@@ -1,9 +1,9 @@
 package creatures;
 
-public class Animal {
+public abstract class Animal implements FeedAble {
     private final String name;
     private final int age;
-    private double weight;
+     double weight;
     private final String species;
 
 
@@ -14,47 +14,7 @@ public class Animal {
         this.species = species;
     }
 
-    public void feed() {
-        if (this.weight <= 0) {
-            System.out.println("The animal is deceased. Cannot feed.");
-            return;
-        }
-
-        this.weight += 1;
-    }
-
-    public void takeForAWalk() {
-        if (this.weight <= 0) {
-            System.out.println("The animal is deceased. Cannot take for a walk.");
-            return;
-        }
-
-        this.weight -= 1;
-
-        if (this.weight == 0) {
-            System.out.println("The animal has died from exhaustion.");
-        }
-    }
-
-    @Override
-    public String toString() {
-        return  species + '\'' +
-                '}';
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
     public double getWeight() {
         return weight;
-    }
-
-    public String getSpecies() {
-        return species;
     }
 }
