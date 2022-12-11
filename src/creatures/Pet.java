@@ -15,4 +15,9 @@ public class Pet  extends Animal{
     public void feed(double foodWeight) {
         System.out.println("I'm a pet, I don't eat");
     }
+
+    @Override
+    public void beEaten() {
+
+    }
 }

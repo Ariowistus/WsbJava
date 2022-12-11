@@ -13,16 +13,9 @@ public class Main {
         pig.feed(10);
         ;
 
-        System.out.println(pig.getWeight());
-
-
-
-
-
-
-
-
-
+        System.out.println("mmmmm kłikłi "+pig.getWeight());
+        pig.beEaten();
+        System.out.println("oh No! kill pig "+pig.getWeight());
 
     }
 }

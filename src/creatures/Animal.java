@@ -1,6 +1,6 @@
 package creatures;
 
-public abstract class Animal implements FeedAble {
+public abstract class Animal implements FeedAble, Edbile {
     private final String name;
     private final int age;
      double weight;
