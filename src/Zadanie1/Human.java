@@ -1,18 +1,21 @@
 package Zadanie1;
 
+import device.Car;
+
 import java.time.LocalDateTime;
 
-public class Human {
+public class Human extends Animal {
     private final String name;
     private final String surname;
     private final int age;
     private final int weight;
     private final Animal pet;
-    private  Car car;
+    private Car car;
 
     private double salary;
 
     public Human(String name, String surname, int age, int weight, Animal pet, Car car) {
+        super(name, age, weight, "human");
         this.name = name;
         this.surname = surname;
         this.age = age;

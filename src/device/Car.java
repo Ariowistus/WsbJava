@@ -1,14 +1,15 @@
-package Zadanie1;
+package device;
 
 import java.util.Objects;
 
-public class Car {
+public class Car extends Device {
     final String model;
     final String producer;
     final int year;
     private final double price;
 
     public Car(String model, String producer, int year, double price) {
+        super(model, producer, year, price);
         this.model = model;
         this.producer = producer;
         this.year = year;
