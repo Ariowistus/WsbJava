@@ -7,9 +7,7 @@ public class Main {
         Car car = new Car("Audi", "Aminus11", 1994, 800);
         Car car2 = new Car("Audi", "Aminus10", 1994, 900);
         Human human = new Human("Jan", "Kowalski", 30, 80, dog, car);
-        Human human1 = new Human("Jan", "Kowalski", 30, 80, dog, car);
-        Human human2 = new Human("Jan", "Kowalski", 30, 80, dog, car);
-        Human human3 = new Human("Jan", "Kowalski", 30, 80, dog, car);
+
 
         Double price= car.getPrice();
         Double price2= car2.getPrice();
