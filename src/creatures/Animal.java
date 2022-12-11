@@ -1,4 +1,4 @@
-package Zadanie1;
+package creatures;
 
 public class Animal {
     private final String name;
@@ -38,11 +38,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", weight=" + weight +
-                ", species='" + species + '\'' +
+        return  species + '\'' +
                 '}';
     }
 
