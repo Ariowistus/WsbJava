@@ -1,17 +1,11 @@
 package device;
 
 public class Phone extends Device {
-    final String model;
-    final String producer;
-    final int year;
-    final double price;
+
+    Boolean isOn;
 
     public Phone(String model, String producer, int year, double price) {
         super(model, producer, year, price);
-        this.model = model;
-        this.producer = producer;
-        this.year = year;
-        this.price = price;
     }
 
     @Override
@@ -22,5 +16,13 @@ public class Phone extends Device {
                 ", year=" + year +
                 ", price=" + price +
                 "} " + super.toString();
+    }
+
+    @Override
+    public boolean turnOn() {
+
+        System.out.println("Phone is on");
+        return isOn = true;
+
     }
 }

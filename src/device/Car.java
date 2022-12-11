@@ -3,17 +3,12 @@ package device;
 import java.util.Objects;
 
 public class Car extends Device {
-    final String model;
-    final String producer;
-    final int year;
-    private final double price;
+
+    Boolean isOn;
 
     public Car(String model, String producer, int year, double price) {
         super(model, producer, year, price);
-        this.model = model;
-        this.producer = producer;
-        this.year = year;
-        this.price = price;
+
     }
 
     public double getPrice() {
@@ -53,5 +48,12 @@ public class Car extends Device {
                 ", year=" + year +
                 ", price=" + price +
                 '}';
+    }
+
+    @Override
+    public boolean turnOn() {
+        System.out.println("Car is on");
+        return this.isOn = true;
+
     }
 }
